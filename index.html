@@ -1,225 +1,385 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="">
+
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===========================
+    THEME INFO
+    =========================== -->
+    <meta name="description" content="CVstrap is another Free minimal CV HTML theme by EvenFly built with Bootstrap 3.3.0. and released under CC-3.0 license.">
+    <meta name="keywords" content="curriculum vitae, cv, one page, onepage, bootstrap, responsive, resume, timeline, free cv">
+    <meta name="author" content="Mamun Srizon">
+
+    <!-- ===========================
+    SITE TITLE
+    =========================== -->
+    <title>CVstrap - Free Bootstrap CV Template by EvenFly</title>
+
+    <!-- ===========================
+    FAVICONS
+    =========================== -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-ipad-retina.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-iphone-retina.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-ipad.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-iphone.png" />
+
+    <!-- ===========================
+    STYLESHEETS
+    =========================== -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- ===========================
+    FONTS & ICONS
+    =========================== -->
+    <link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
     <!--[if IE]>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<![endif]-->
-    <title>Welcome to Kevin Ling's homepage</title>
-    <!-- BOOTSTRAP CORE STYLE -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-    <!-- FONT AWESOME ICON STYLE -->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-    <!-- CUSTOM STYLE CSS -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-
-
+        <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-    <div id="header">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 logo-div">
-                        <div class="logo-inner text-center">
-                            <div class="logo-name">
-                                <a href="index.html">
-                                    <img src="assets/img/me.jpg" class="img-circle" />
-                                </a>
-                            </div>
 
+<body>
+    <div class="container">
+        <!-- ===========================
+        HEADER
+        ============================ -->
+        <div id="header" class="row">
+            <div class="col-sm-2">
+                <img class="propic" src="img/bappy.jpg" alt="">
+            </div>
+            <!-- photo end-->
+
+            <div class="col-sm-10">
+                <div class="cv-title">
+                    <div class="row">
+                        <div class="col-sm-7">
+                            <h1>Towkir A. Bappy</h1>
+                        </div>
+                        <div class="col-sm-5 text-right dl-share">
+                            <!-- AddToAny BEGIN -->
+                            <a class="a2a_dd btn btn-default" href=""><span class="fa fa-share "></span> Share</a>
+                            <script type="text/javascript">
+                                var a2a_config = a2a_config || {};
+                                a2a_config.linkname = "Minimal CV by EvenFly";
+                                a2a_config.num_services = 6;
+                                a2a_config.prioritize = ["facebook", "twitter", "google_plus", "linkedin", "pinterest", "email"];
+                            </script>
+                            <script type="text/javascript" src="//static.addtoany.com/menu/page.js"></script>
+                            <!-- AddToAny END -->
+
+                            <a class="btn btn-success" href=""><span class="fa fa-download"></span> Download</a>
+                        </div>
+                    </div>
+                    <h2>UI/UX Designer</h2>
+                </div><!-- Title end-->
+
+                <!-- ===========================
+                SOCIAL & CONTACT
+                ============================ -->
+                <div class="row">
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href=""><span class="social fa fa-home"></span>EvenFly.com</a>
+                            </li>
+                            <li><a href=""><span class="social fa fa-skype"></span>+88 0123 45678</a>
+                            </li>
+                            <li><a href="mailto:support@evenfly.com"><span class="social fa fa-envelope-o"></span>me@mail.com</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 1st col end-->
+
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href=""><span class="social fa fa-facebook"></span>Facebook</a>
+                            </li>
+                            <li><a href=""><span class="social fa fa-twitter"></span>Twitter</a>
+                            </li>
+                            <li><a href=""><span class="social fa fa-linkedin"></span>Linkedin</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 2nd col end-->
+
+                    <div class="col-sm-4">
+                        <ul class="list-unstyled">
+                            <li><a href=""><span class="social fa fa-behance"></span>Behance</a>
+                            </li>
+                            <li><a href=""><span class="social fa fa-dribbble"></span>Dribbble</a>
+                            </li>
+                            <li><a href=""><span class="social fa fa-instagram"></span>Instagram</a>
+                            </li>
+                        </ul>
+                    </div><!-- social 3rd col end-->
+                </div><!-- header social end-->
+            </div><!-- header right end-->
+        </div><!-- header end-->
+
+        <hr class="firsthr">
+
+        <!-- ===========================
+        BODY LEFT PART
+        ============================ -->
+        <div class="col-md-8 mainleft">
+            <div id="statement" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-user"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>Personal statement </h3>
+                    <p>Hi, I am Bappy from Bangladesh.Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla. Duis vitae nisi eu odio Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan.</p>
+
+                    <p>Consectetur adipisicing elit. Hic labore, unde, ratione, itaque ducimus provident error similique qui, recusandae nam dignissimos autem. Sequi quas quis non, odit assumenda similique neque.</p>
+
+                    <p class="signature">TowkirAhmed</p>
+                </div><!--info end-->
+            </div><!--personal statement end-->
+
+            <hr>
+
+            <div id="education" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-graduation-cap"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>Education &amp; Certification</h3>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>MSc in Design &amp; Fine Art</h4>
+                            <p class="sub"><a href="">Ideal Institute of Science and Technology</a>
+                            </p>
+                            <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
                         </div>
 
-                    </div>
-                    <div class="col-md-8 header-text-top " id="about">
+                        <div class="year col-md-3">
+                            <p>2009-2011</p>
+                        </div>
+                    </div><!--Education & Certification 1 end-->
+                    
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>BSc in Graphic Design</h4>
+                            <p class="sub"><a href="">Ideal Institute of Science and Technology</a>
+                            </p>
+                            <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
+                        </div>
 
+                        <div class="year col-md-3">
+                            <p>2006-2009</p>
+                        </div>
+                    </div><!--Education & Certification 2 end-->
 
+                    <hr>
 
-                        <h1>Hi! I'm Kevin Ling(凌恺)</h1>
-						I am currently an undergrad at <a href="http://english.hust.edu.cn/">Huazhong University of Sicence and Technology</a>, China.  <br /> 
-						<h2><strong>Curriculum vitae </strong></h2>
-                        <a href="assets/kevin_cv.pdf"><i>download pdf here</i></a>
-						
-                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>Diploma in Graphic Design</h4>
+                            <p class="sub"><a href="">Ideal Institute of Science and Technology</a>
+                            </p>
+                            <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
+                        </div>
+
+                        <div class="year col-md-3">
+                            <p>2003-2006</p>
+                        </div>
+                    </div><!--Education & Certification 3 end-->
                 </div>
-            </div>
-        </div>
-    </div>
-    <!--END HEADER SECTION-->
-    <div class="info-sec">
-        <div class="container">
+            </div><!--Education & Certifications end-->
+            
+            <hr>
+
+            <!-- ===========================
+            JOB EXPERIENCES
+            ============================ -->
+            <div id="job" class="row mobmid">
+                <div class="col-sm-1">
+                    <span class="secicon fa fa-briefcase"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11">
+                    <h3>Job Experiences</h3>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>Lead Graphic Designer</h4>
+                            <p class="sub"><a href="">Lifeview Media Ltd.</a>
+                            </p>
+                            <p>Adipiscing elit. Nullam dapibus vehicula condimentum. Curabitur elit enim, accumsan vitae tristique ut, mollis at orci. Fusce cursus interdum neque nec aliquam. Proin turpis leo, laoreet non ultricies non, dictum nec nulla.</p>
+                        </div>
+
+                        <div class="year col-md-3">
+                            <p>2008 - present</p>
+                        </div>
+                    </div><!--Job 1 end-->
+                    
+                    <hr>
+                    
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h4>Sr. Graphic Designer</h4>
+                            <p class="sub"><a href="">Softech solution ltd.</a>
+                            </p>
+                            <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
+                        </div>
+
+                        <div class="year col-md-3">
+                            <p>2006-2008</p>
+                        </div>
+                    </div><!--Job 2 end-->
+                    
+                    <hr>
+                    
+                       <div class="row">
+                        <div class="col-md-9">
+                            <h4>Jr. Graphic Designer</h4>
+                            <p class="sub"><a href="">TwinTwin Design Solution</a>
+                            </p>
+                            <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
+                        </div>
+
+                        <div class="year col-md-3">
+                            <p>2003-2006</p>
+                        </div>
+                    </div><!--Job 3 end-->
+                </div><!--Job experiences end-->
+            </div><!--Job experiences end-->
+        </div><!--left end-->
+        
+        <!-- ===========================
+        SIDEBAR
+        =========================== -->
+        <div class="col-md-4 mainright">
             <div class="row">
-                <div class="col-md-10">
-                    Contact me at <strong>keviniling</strong>@hust.edu.cn
-                </div>
-                <div class="col-md-2">
-                    <div class="social-link">
-                        <a href="https://github.com/JazielXu" class="btn btn-default btn-xs"><i class="fa fa-github fa-2x"></i></a>
-			<a href="https://www.facebook.com/jaziel.xu" class="btn btn-default btn-xs"><i class="fa fa-facebook fa-2x"></i></a>                        
-			<a href="https://plus.google.com/104391331771298200157" class="btn btn-default btn-xs"><i class="fa fa-google-plus fa-2x"></i></a>
-			
+                <div class="col-sm-1 col-md-2 mobmid">
+                    <span class="secicon fa fa-magic"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11 col-md-10">
+                    <h3 class="mobmid">Technical skills </h3>
+
+                    <p>Photoshop</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%">
+                            <span class="sr-only">65% Complete (success)</span>
+                        </div>
+                    </div><!--skill end-->
+
+
+                    <p>Illustrator</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%">
+                            <span class="sr-only">85% Complete</span>
+                        </div>
+                    </div><!--skill end-->
+
+                    <p>InDesign</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            <span class="sr-only">60% Complete (warning)</span>
+                        </div>
+                    </div><!--skill end-->
+
+                    <p>Flash</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+                            <span class="sr-only">30% Complete (danger)</span>
+                        </div>
+                    </div><!--skill end-->
+                </div><!--info end-->
+            </div><!--tech skills end-->
+            
+            <hr>
+
+            <div class="row mobmid">
+                <div class="col-sm-1 col-md-2">
+                    <span class="secicon fa fa-trophy"></span>
+                </div><!--icon end-->
+
+                <div class="col-sm-11 col-md-10 ">
+                    <h3>Awards</h3>
+
+                    <div class="award">
+                        <h4>Best Designer 2012</h4>
+                        <p class="sub"><a href="">Life View Media Ltd.</a></p>
+                        <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration.</p>
                     </div>
+                    <!--1st award end-->
 
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="copyrights">Collect from <a href="http://www.cssmoban.com/"  title="homepage">homepage</a></div>
-    <!--END INFO SECTION-->
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-8 ">
-                <div class="blog-post">
-                    <h1>Education</h1>
-                    <h3>Huazhong University of Science and Technology </h3>
-                    <p>
-			Major in Computer Science
-                    </p>
-		    <p>
-			Expected to graduate June 2019
-		    </p>
-<p>
-	I am currently a junior student at Huazhong University of Science and Technology, Wuhan, China. I am currently pursuing a degree in Computer Science. Throughout my undergraduate career, I have diligently devoted myself to study and earned an overall GPA of 3.85.
-</p>
-
-<div id="myDIV">
-<p>
-	blahblah
-</p>	
-<p>
-        blahblah	
-</p>
-<p>
-	blahblah
-</p>
-</div>
-                   
-                <div class="blog-post">
-                    <h1>Research experience</h1>
-                   
-                    <p>
-                        blahblah
-                    </p>
-
-		   
-			<div id="c2">
-
-</div>
-		 <button onclick="myFunction2()">view more about my research experience</button>
-		    <script>
-			var y = document.getElementById("c2");
-			y.style.display="none";
-			</script>
-			<script>
-			function myFunction2() {
-			    var x = document.getElementById("c2");
-			    if (x.style.display === "none") {
-				x.style.display = "block";
-			    } else {
-				x.style.display = "none";
-			    }
-			}
-		    </script>
-		
-			
-    
-                </div>
-                
-
-		<div class="blog-post">
-                    <h1>Skills</h1>
-
-                    <h3>language </h3>
-                    <p>
-                        When it comes to languages, I am a bilingual in Chinese and English. I feel comfortable in doing academic reading, writing, and speaking using both of these two languages, as I scored thirty out of thirty in the TOEFL reading section and twenty-nine in the listening section.
-                    </p>
-		    <h3>programming</h3>
-		    <p>
-			For programming languages, I use C++ on a daily basis and I also could code in Python, making use of those powerful packages and libraries. </p>
-
-<div id="c3">
-<p>
-I completed quite a lot of Online-Judge coding problems and executed several projects so I strongly believe I am capable of writing exceptional codes in these languages. Since I also major in Physics, I know other softwares including Mathematica, Matlab and ROOT, a modular scientific software framework.
-		    </p>
-                    <h3>hobbies!</h3>
-		<p>
-I have a lot of hobbies! Harvesting a  wide range of interests that began from a young age, I enjoy classical music very much and I’m very talented at playing the piano. I also understand basic music theories, especially in harmonic analysis and polyphonic music like the fugues by J.S. Bach. I am passionate about calligraphy, in both English letters and Chinese characters. I am also a great fan of chess.
-</p>
-</div>
-
- <button onclick="myFunction3()">view more/less</button>
-		    <script>
-			var y = document.getElementById("c3");
-			y.style.display="none";
-			</script>
-			<script>
-			function myFunction3() {
-			    var x = document.getElementById("c3");
-			    if (x.style.display === "none") {
-				x.style.display = "block";
-			    } else {
-				x.style.display = "none";
-			    }
-			}
-		    </script>
-                </div>
-
-<div class="blog-post">
-                    <h1>Honors and awards</h1>
-		    <p><strong svelte-1121297037="">China Undergraduate Physics Tournament</strong>, 2016.5
-      <br><em>won third prize and was awarded with a complete set of Series in Theoretical Physics by Landau.</em></p>
-
-	<p><strong svelte-1121297037="">China Undergraduate Physics Tournament</strong>, 2015
-     	 <br><em>participate representing Team Beijing and won third prize.</em></p>
-
-</div>
-
-<div class="blog-post">
-<h1>My Projects</h1>
-
-<img align="left" src="assets/img/omg.jpg" alt="haha" style="width:350px;height:250px;">
-
-
-<a href="https://github.com/JazielXu/SpaceGame"> <h3> Space Game </p> </h3></a>
-<p>a gravity based game using C++ with Qt5
-</p>
-</div>
-
-                <br />  </div>
-<img align="left" src="assets/img/seg.jpg" alt="seg" style="width:350px;height:250px;">
-<a href="https://github.com/JazielXu/SpaceGame"> <h3> Chinese Word Segmentation</h3></a>
-<p>using Sighan 2004 training set to train a perceptron</p>
+                    <div class="award">
+                        <h4>Best Designer 2011</h4>
+                        <p class="sub"><a href="">Alexa Design Solution</a></p>
+                        <p>Studying all aspect of Graphic Design Including Advertising Design, Branding, Copy Exhibition Design, Ilustration, Information Design, Packaging Design and Website Design</p>
+                    </div><!--1st award end-->
+                </div><!--awards end-->
 
             </div>
             
+            <hr>
 
-        </div>
+            <div class="row ">
+                <div class="col-sm-1 col-md-2 mobmid">
+                    <span class="secicon fa fa-quote-left"></span>
+                </div><!--icon end-->
 
+                <div class="col-sm-11 col-md-10 testimonials">
+                    <h3 class="mobmid">Testimonials </h3>
 
-  
+                    <div class="row">
+                        <blockquote>
+                            <p>Sit amet, consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
+                        </blockquote>
+                        <img src="img/mushfiq.jpg" alt="">
+                        <h4>Mushfiqul Islam</h4>
+                        <p>The UX Votch</p>
+                    </div><!--1st testimonial end-->
 
-    <!--END HOME PAGE SECTION-->
-    <div class="footer-sec" style="margin-top: 0px;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 foo-inner">
-                    &copy; 2018 Jazielxu.github.io | More at <a href="https://github.com/JazielXu" target="_blank" title="git">github mainpage</a> 
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END FOOTER SECTION -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME -->
-    <!-- CORE JQUERY -->
-    <script src="assets/js/jquery-1.11.1.js"></script>
-    <!-- BOOTSTRAP SCRIPTS -->
-    <script src="assets/js/bootstrap.js"></script>
+                    <div class="row">
+                        <blockquote>
+                            <p>Consectetur adipisicing elit. Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
+                        </blockquote>
+                        <img src="img/siblu.jpg" alt="">
+                        <h4>E.A. Siblu</h4>
+                        <p>The Jatir Vobisshot</p>
+                    </div><!--2nd testimonial end-->
 
+                    <div class="row">
+                        <blockquote>
+                            <p>Fuga quidem ipsum maiores necessitatibus sint, porro temporibus labore, amet officia unde libero eligendi? Porro dolorum itaque, facere harum amet, rem libero.</p>
+                        </blockquote>
+                        <img src="img/nasir.jpg" alt="">
+                        <h4>Nasir Uddin</h4>
+                        <p>The Cute Huzur</p>
+                    </div><!--3rd testimonial end-->
+                </div><!--testimonials end-->
+            </div><!--tech skills end-->
+        </div><!--right end-->
+    </div><!--container end-->
+
+    <!-- ===========================
+    FOOTER
+    =========================== -->
+    <footer class="text-center">
+        <p>&copy; <a href="http://creativecommons.org/licenses/by/3.0/">CC-3.0</a>, Just another CV template by <a href="https://evenfly.com">EvenFly </a> - Designed by <a target="_blank" href="http://www.facebook.com/towkirahmedbappy">Towkir Ahmed Bappy</a>.
+        </p>
+    </footer>
+
+    <!--necessary scripts and plugins-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/evenfly.js"></script>
 </body>
+
 </html>
