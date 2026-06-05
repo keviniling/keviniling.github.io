@@ -1,6 +1,6 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
 description: From novel DL frameworks to deployed web tools — building end-to-end systems for molecular structure modeling.
 nav: true

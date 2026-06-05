@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: CS PhD Candidate at <a href='https://www.purdue.edu/'>Purdue University</a> | Computational Biology
 

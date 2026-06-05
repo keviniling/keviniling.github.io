@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: Computational biology, protein structure prediction, and mobile network systems.
 nav: true
 nav_order: 2
