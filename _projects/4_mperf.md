@@ -13,8 +13,8 @@ category: research
 **Advisor**: Chunyi Peng, Professor, Purdue University
 
 ### mperf Platform
-- Built mperf, a Django web platform for large-scale 5G data collection (sole developer, first version)
-- Developed the lab's network-data visualization map — adopted as the ACM IMC 2018 poster
+- Built [mperf](http://milab.cs.purdue.edu/tasks/), a Django web platform for large-scale 5G data collection (sole developer, first version)
+- Developed the lab's network-data visualization map ([MMMap](http://milab.cs.purdue.edu/mapvis/)) — adopted as the ACM IMC 2018 poster
 
 ### 5G Protocol Security Analysis
 - Ran large-scale 3GPP R17 protocol analysis with a lightweight formal method (Delta)
