@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Five years of TA experience in computer networking at Purdue.
 nav: true
 nav_order: 6
 calendar: true
