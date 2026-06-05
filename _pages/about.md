@@ -30,6 +30,6 @@ latest_posts:
 
 I am a CS PhD candidate at [Purdue University](https://www.purdue.edu/) under the supervision of Prof. [Daisuke Kihara](https://kiharalab.org/web/dkihara/). My research focuses on **computational biology**, particularly in **protein structure prediction** and **structure modeling** using deep learning methods.
 
-I received my B.S. in Computer Science from [Huazhong University of Science and Technology (HUST)](http://english.hust.edu.cn/) in 2019, where I graduated with a GPA of 3.8/4.0 and received the National Scholarship.
+I received my B.S. in Computer Science from [Huazhong University of Science and Technology (HUST)](http://english.hust.edu.cn/) in 2019.
 
 Beyond research, I am an amateur piano soloist. I served as the piano soloist in the Symphony Orchestra of HUST and as piano pedagogy for the Chorus of HUST.
