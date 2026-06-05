@@ -1,43 +1,40 @@
 ---
 layout: page
 title: mperf & 5G Research
-description: Mobile network performance analysis and 4G/5G measurement studies
+description: Mobile network measurement platform and cellular network security research
 img: 
 importance: 4
 category: research
 ---
 
-## Mobile Network Research (2018 – 2022)
+## Mobile Network Research at MSSN Lab
 
-**Role**: Research Assistant at MSSN Lab
+**Role**: Research Assistant  
+**Advisor**: Chunyi Peng, Professor, Purdue University
 
-Research on mobile network performance analysis, LTE-Advanced Pro deployment, and 5G measurement studies.
+### mperf Platform
+- Built mperf, a Django web platform for large-scale 5G data collection (sole developer, first version)
+- Developed the lab's network-data visualization map — adopted as the ACM IMC 2018 poster
 
-### Projects
+### 5G Protocol Security Analysis
+- Ran large-scale 3GPP R17 protocol analysis with a lightweight formal method (Delta)
+- Found 4 security vulnerabilities and built 12 proof-of-concept exploits
 
-#### MMMap: Mobility Management Map
-- Developed framework for understanding 4G/LTE network coverage patterns
-- Presented at **ACM Internet Measurement Conference (IMC) 2018** (Poster)
-
-#### LTE-Advanced Pro (4.5G) Study
-- First measurement study unveiling deployment status of LTE-Advanced Pro networks
-- Published at **ACM HotMobile 2020**
-
-#### MobileInsight Platform
-- Contributed to comprehensive platform for analyzing cellular network information on smartphones
-- Published at **ACM MobiCom 2021**
+### Cellular Measurement Studies
+- Led a nationwide 5G study across major US carriers (mmWave + Sub-6 GHz), root-causing systemic underutilization and prototyping the "5GBoost" patch
+- Conducted the first city-scale cellular-UAV study (45 hr, 1,010 km) with deep RAN-layer trace analysis
 
 ### Publications
 
-- Ling, K. et al. "MMMap: Mobility Management Map..." ACM IMC 2018 (Poster)
-- Deng, H., Ling, K. et al. "Unveiling the Missed 4.5G..." ACM HotMobile 2020
-- Li, Y. et al. "MobileInsight..." ACM MobiCom 2021
+- Ling, K.* et al. "MMMap: Mobility Management Map of Global Carrier Networks." ACM IMC 2018 (poster, *co-first)
+- Li, Y. et al. (incl. Ling, K.). "Experience: A Five-Year Retrospective of MobileInsight." ACM MobiCom 2021
+- Deng, H., Ling, K. et al. "Unveiling the Missed 4.5G Performance in the Wild." ACM HotMobile 2020 (paper + poster)
 
 ### Technologies
 
-- Mobile network analysis
-- Android development
-- Network measurement tools
-- Data analysis
+- Django, Python
+- Mobile network analysis, Android development
+- 3GPP protocol analysis, Formal methods
+- Network measurement and data visualization
 
-*Research conducted at MSSN Lab*
+*Research conducted at MSSN Lab, Purdue University*

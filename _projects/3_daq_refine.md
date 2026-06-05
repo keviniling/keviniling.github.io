@@ -1,33 +1,30 @@
 ---
 layout: page
-title: DAQ-Refine Web Tool
-description: Full-stack web application for cryo-EM protein model refinement
+title: DAQ-Refine
+description: Production web service for cryo-EM protein model refinement
 img: 
 importance: 3
 category: research
 related_publications: false
 ---
 
-## DAQ-Refine Web Tool (Aug 2023 – Jan 2024)
+## DAQ-Refine (Aug 2023 – Jan 2024)
 
-**Role**: Project Leader
+**Role**: Designer & Sole Developer
 
-A full-stack web application for refining protein models from cryo-EM data, deployed as part of the [EMSuite server](https://em.kiharalab.org/algorithm/daq-refine).
+A production web service for cryo-EM protein model refinement, deployed as part of the published EMSuite server. Open-access and used by labs worldwide at ~10–20 jobs/month.
 
 ### Key Achievements
 
-- Built a full-stack web application using **React.js** frontend and **Python/Flask** backend
-- Designed and implemented RESTful APIs handling complex multi-chain protein models with up to **50,000 atoms**
-- Deployed on AWS using **Docker containers** with CI/CD pipeline for automated testing and deployment
-- Engineered distributed computing framework achieving **40% reduction** in processing time through parallel execution
+- Deployed the lab's cryo-EM refinement method as a production web service (React + Flask, Mol* 3D viewer)
+- Re-architected from a usage-capped Colab notebook to a distributed backend, removing per-user limits and enabling large multimer jobs
+- Runs and compares 3 refinement strategies and auto-selects the best result
 
 ### Technologies
 
-- **Frontend**: React.js
-- **Backend**: Python, Flask
-- **Visualization**: Mol*
-- **Infrastructure**: Docker, AWS, CI/CD
-- **Computing**: Distributed/parallel processing
+- **Frontend**: React.js, Mol* 3D visualization
+- **Backend**: Python, Flask, RESTful APIs
+- **Infrastructure**: Distributed backend for large multimer jobs
 
 ### Live Demo
 
