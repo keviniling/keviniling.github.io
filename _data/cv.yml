@@ -1,0 +1,92 @@
+cv:
+  name: Kai Ling
+  label: CS PhD Candidate
+  email: ling59@purdue.edu
+  location: West Lafayette, IN
+  image: ""
+  summary: CS PhD candidate at Purdue University working on computational biology, protein structure prediction, and deep learning for molecular modeling.
+
+  social_networks:
+    - network: GitHub
+      username: keviniling
+    - network: LinkedIn
+      username: kai-ling-540629117
+
+  sections:
+    Education:
+      - institution: Purdue University
+        location: West Lafayette, IN
+        url: https://www.purdue.edu/
+        area: Computer Science
+        studyType: PhD
+        start_date: 2019
+        highlights:
+          - "Advisor: Prof. Daisuke Kihara"
+          - "Research: Computational biology, protein structure prediction"
+
+      - institution: Huazhong University of Science and Technology (HUST)
+        location: Wuhan, China
+        area: Computer Science
+        studyType: BS
+        start_date: 2015
+        end_date: 2019
+        score: "GPA: 3.8/4.0"
+        highlights:
+          - National Scholarship (2/120)
+          - Freshmen Scholarship (1/120)
+
+    Experience:
+      - company: Kihara Lab, Purdue University
+        position: Graduate Research Assistant
+        location: West Lafayette, IN
+        start_date: 2019
+        summary: Research on protein structure prediction and deep learning for molecular modeling.
+        highlights:
+          - Distance-AF Multimer for protein complex structure prediction
+          - NuFold Multimer for RNA-RNA complex prediction
+          - DAQ-Refine web tool for cryo-EM refinement
+
+    Awards:
+      - title: National Scholarship
+        date: 2017
+        awarder: HUST
+        summary: Ranked 2/120
+
+      - title: Freshmen Scholarship
+        date: 2015
+        awarder: HUST
+        summary: Ranked 1/120
+
+      - title: Model Student of Academic Records
+        date: 2017
+        awarder: HUST
+        summary: Ranked 5/120
+
+      - title: Outstanding Student
+        date: 2017
+        awarder: HUST
+        summary: Ranked 4/120
+
+    Skills:
+      - name: Programming
+        keywords: "Python, C++, Java, SQL, Bash"
+
+      - name: ML/DL
+        keywords: "PyTorch, Transformers, Diffusion Models, Structure Prediction"
+
+      - name: Full-stack
+        keywords: "React, Flask, Django, Mol*"
+
+      - name: Infrastructure
+        keywords: "Docker, Git, CI/CD, HPC/SLURM"
+
+    Languages:
+      - name: Chinese
+        summary: Native
+
+      - name: English
+        summary: Fluent
+
+    Interests:
+      - name: Piano
+        keywords: "Classical music, Symphony Orchestra soloist at HUST"

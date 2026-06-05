@@ -1,0 +1,12 @@
+# Co-author name variants for bibliography linking
+# Add co-authors from your publications here
+
+"kihara":
+  - firstname: ["Daisuke", "D."]
+    url: https://kiharalab.org/web/dkihara/
+
+"li":
+  - firstname: ["Yuanjie", "Y."]
+
+"deng":
+  - firstname: ["Haotian", "H."]
