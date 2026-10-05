@@ -5,7 +5,7 @@
     "image": "",
     "email": "ling59@purdue.edu",
     "phone": "",
-    "summary": "CS PhD candidate at Purdue University working on computational biology, protein structure prediction, and deep learning for molecular modeling.",
+    "summary": "Computer Science PhD candidate at Purdue University developing Transformer and diffusion models, training-data pipelines, and reproducible evaluation systems. Experienced in multi-node GPU training and memory optimization, with full-stack experience deploying a public research application.",
     "location": {
       "city": "West Lafayette",
       "countryCode": "US",
@@ -30,11 +30,12 @@
       "position": "Graduate Research Assistant",
       "location": "West Lafayette, IN",
       "startDate": "2019-08-01",
-      "summary": "Research on protein structure prediction and deep learning for molecular modeling under Prof. Daisuke Kihara.",
+      "summary": "Research on deep learning for molecular structure modeling under Prof. Daisuke Kihara.",
       "highlights": [
-        "Distance-AF Multimer for protein complex structure prediction",
-        "NuFold Multimer for RNA-RNA complex prediction",
-        "DAQ-Refine web tool for cryo-EM refinement"
+        "NuFold Multimer: generative modeling for RNA complexes",
+        "CryoASTRA: evaluation and benchmarking for cryo-EM atomic structure modeling",
+        "Distance-AF Multimer: constraint-guided protein complex modeling",
+        "DAQ-Refine: cryo-EM protein model refinement service"
       ]
     }
   ],
@@ -45,6 +46,15 @@
       "area": "Computer Science",
       "studyType": "PhD",
       "startDate": "2019-08-01",
+      "score": "",
+      "courses": []
+    },
+    {
+      "institution": "Purdue University",
+      "location": "West Lafayette, IN",
+      "area": "Computer Science",
+      "studyType": "MS",
+      "endDate": "2025-05-01",
       "score": "",
       "courses": []
     },
@@ -75,20 +85,58 @@
   ],
   "skills": [
     {
-      "name": "Programming",
-      "keywords": ["Python", "C++", "Java", "SQL", "Bash"]
+      "name": "Programming Languages",
+      "keywords": [
+        "Python",
+        "C++",
+        "Java",
+        "SQL",
+        "Bash"
+      ]
     },
     {
-      "name": "ML/DL",
-      "keywords": ["PyTorch", "Transformers", "Diffusion Models", "Structure Prediction"]
-    },
-    {
-      "name": "Full-stack",
-      "keywords": ["React", "Flask", "Django", "Mol*"]
+      "name": "ML / DL",
+      "keywords": [
+        "PyTorch",
+        "Transformers",
+        "diffusion models",
+        "distributed multi-GPU training",
+        "GPU inference",
+        "training with teacher-generated data",
+        "model evaluation",
+        "NVIDIA cuEquivariance"
+      ]
     },
     {
       "name": "Infrastructure",
-      "keywords": ["Docker", "Git", "CI/CD", "HPC/SLURM"]
+      "keywords": [
+        "Linux",
+        "HPC / SLURM",
+        "Docker",
+        "Git",
+        "CI/CD"
+      ]
+    },
+    {
+      "name": "LLM / GenAI",
+      "keywords": [
+        "OpenAI and Anthropic APIs",
+        "RAG",
+        "FAISS",
+        "pgvector",
+        "function calling",
+        "agents"
+      ]
+    },
+    {
+      "name": "Application Development",
+      "keywords": [
+        "React",
+        "Flask",
+        "Django",
+        "REST APIs",
+        "Mol*"
+      ]
     }
   ],
   "languages": [
@@ -104,7 +152,10 @@
   "interests": [
     {
       "name": "Piano",
-      "keywords": ["Classical", "Symphony Orchestra"]
+      "keywords": [
+        "Classical",
+        "Symphony Orchestra"
+      ]
     }
   ]
 }

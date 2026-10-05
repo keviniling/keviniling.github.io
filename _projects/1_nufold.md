@@ -1,7 +1,7 @@
 ---
 layout: page
 title: NuFold Multimer
-description: RNA-RNA complex structure prediction using diffusion-based deep learning
+description: Generative modeling for RNA complexes with a Transformer and diffusion-based structure model
 img: 
 importance: 1
 category: research
@@ -11,21 +11,21 @@ category: research
 
 **Role**: Lead Developer
 
-The first dedicated deep-learning predictor for RNA–RNA complexes, extending the lab's single-chain NuFold model to multi-chain inputs with a diffusion-based structure module and multi-sample conformational-ensemble generation.
+Generative modeling for RNA complexes: a Transformer-based RNA structure model extended from single-chain to multi-chain prediction, with a diffusion module that generates multiple candidate 3D structures.
 
 ### Key Contributions
 
-- Extended the lab's single-chain NuFold model to multi-chain inputs with a diffusion-based structure module and multi-sample conformational-ensemble generation
-- Built a large-scale model-distillation pipeline to overcome scarce ground truth: ran teacher-model inference (OpenFold3, Protenix) over ~20k RNA–RNA complexes with confidence-based filtering
-- Curated a multi-source training set (RNAInter, RISE, snoDB) with tiered confidence stratification; debugged cross-database label errors to produce clean supervision
-- Scaled training crops to ~1,000 tokens — beyond AlphaFold3's 768 — on substantially fewer GPUs by integrating NVIDIA cuEquivariance kernels and a memory-efficient diffusion module
-- Benchmarked SOTA predictors (AlphaFold3, Boltz-2) on RNA–RNA complexes and showed none reliably handle them, establishing the need for a dedicated model
+- Extended a Transformer-based RNA structure model from single-chain to multi-chain prediction, integrating a diffusion module to generate multiple candidate 3D structures
+- Built a data-curation and teacher-inference pipeline, running inference on approximately 20,000 RNA complexes; integrated multiple data sources, corrected inconsistent labels and identifiers, and applied confidence-based filtering for training
+- Ran matched training ablations using 8 NVIDIA A100 80GB GPUs across 4 nodes to evaluate diffusion-decoder stability
+- Enabled training crops of approximately 1,000 tokens by integrating NVIDIA cuEquivariance and a memory-efficient diffusion implementation
+- Benchmarked AlphaFold3 and Boltz-2 on RNA complexes to compare prediction accuracy and characterize model limitations
 
 ### Technologies
 
 - PyTorch, Transformers, Diffusion models
-- Distributed multi-GPU training/inference
-- NVIDIA cuEquivariance GPU kernels
-- Model distillation from OpenFold3, Protenix
+- Distributed multi-GPU training, GPU inference
+- NVIDIA cuEquivariance
+- Training with teacher-generated data
 
 *Project ongoing at [Kihara Lab](https://kiharalab.org/), Purdue University*

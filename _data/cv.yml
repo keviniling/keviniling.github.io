@@ -4,7 +4,7 @@ cv:
   email: ling59@purdue.edu
   location: West Lafayette, IN
   image: ""
-  summary: CS PhD candidate at Purdue University working on computational biology, protein structure prediction, and deep learning for molecular modeling.
+  summary: Computer Science PhD candidate at Purdue University developing Transformer and diffusion models, training-data pipelines, and reproducible evaluation systems. Experienced in multi-node GPU training and memory optimization, with full-stack experience deploying a public research application.
 
   social_networks:
     - network: GitHub
@@ -20,31 +20,90 @@ cv:
         area: Computer Science
         studyType: PhD
         start_date: 2019
+        end_date: Present
         highlights:
+          - "Expected May 2027"
           - "Advisor: Prof. Daisuke Kihara"
-          - "Research: Computational biology, protein structure prediction"
+          - "Master of Science in Computer Science, May 2025"
 
       - institution: Huazhong University of Science and Technology (HUST)
         location: Wuhan, China
-        area: Computer Science
+        area: Computer Science and Technology
         studyType: BS
         start_date: 2015
         end_date: 2019
         score: "GPA: 3.8/4.0"
         highlights:
+          - "GPA: 3.8/4.0"
           - National Scholarship (2/120)
           - Freshmen Scholarship (1/120)
 
     Experience:
       - company: Kihara Lab, Purdue University
-        position: Graduate Research Assistant
+        position: "Lead Developer — NuFold Multimer: Generative Modeling for RNA Complexes"
         location: West Lafayette, IN
-        start_date: 2019
-        summary: Research on protein structure prediction and deep learning for molecular modeling.
+        start_date: 2026
+        end_date: Present
         highlights:
-          - Distance-AF Multimer for protein complex structure prediction
-          - NuFold Multimer for RNA-RNA complex prediction
-          - DAQ-Refine web tool for cryo-EM refinement
+          - Extended a Transformer-based RNA structure model from single-chain to multi-chain prediction, integrating a diffusion module to generate multiple candidate 3D structures.
+          - Built a data-curation and teacher-inference pipeline, running inference on approximately 20,000 RNA complexes; integrated multiple data sources, corrected inconsistent labels and identifiers, and applied confidence-based filtering for training.
+          - Ran matched training ablations using 8 NVIDIA A100 80GB GPUs across 4 nodes to evaluate diffusion-decoder stability.
+          - Enabled training crops of approximately 1,000 tokens by integrating NVIDIA cuEquivariance and a memory-efficient diffusion implementation.
+          - Benchmarked AlphaFold3 and Boltz-2 on RNA complexes to compare prediction accuracy and characterize model limitations.
+
+      - company: Kihara Lab, Purdue University
+        position: "Evaluation & Benchmarking — CryoASTRA: Cryo-EM Atomic Structure Modeling"
+        location: West Lafayette, IN
+        start_date: 2026
+        end_date: 2026
+        highlights:
+          - Built a Python/SLURM benchmarking pipeline for CryoASTRA and seven baselines across 103 test cases, with resumable execution, validated result caching, and input/code provenance tracking.
+          - Standardized prediction-to-reference matching and coverage-aware metrics for incomplete outputs; implemented matched-target comparisons and bootstrap confidence intervals to quantify performance differences.
+          - Evaluated five generated samples per input; benchmark results showed a mean TM-score of 0.972 and 92.5% atom-placement accuracy within 3 Å across 101 protein-containing targets, with a statistically significant TM-score gain of 0.117 over CryoAtom2.
+
+      - company: Kihara Lab, Purdue University
+        position: "Lead Developer — Distance-AF Multimer: Constraint-Guided Protein Complex Modeling"
+        location: West Lafayette, IN
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - Implemented per-target test-time optimization to adapt pretrained model predictions to user-supplied geometric constraints without retraining the underlying model.
+          - Designed a coarse-to-fine optimization strategy to improve convergence from inaccurate initial predictions and reduce structural artifacts.
+          - Built a PyTorch optimization workflow supporting structures with 50,000+ atoms, parallelizing independent target optimizations across GPUs.
+          - Evaluated on 27 challenging multimer targets, 8 peptide complexes, and 6 assemblies with 5+ chains; achieved lower RMSD than Chai-1, Protenix, and AlphaLink2 on 22/26, 19/27, and 26/27 benchmark targets, respectively, with up to 57.6 Å lower RMSD than AlphaFold-Multimer.
+          - Conducted ablations across 11 complexes with 0–30 distance constraints and uncertainty of ±2.5 Å and ±5 Å; retained acceptable docking accuracy on 8/11 targets under both uncertainty settings.
+          - First-author manuscript in preparation.
+
+      - company: Kihara Lab, Purdue University
+        position: "Designer & Sole Developer — DAQ-Refine: Cryo-EM Protein Model Refinement Service"
+        location: West Lafayette, IN
+        url: https://em.kiharalab.org/algorithm/daq-refine
+        start_date: 2023
+        end_date: 2024
+        highlights:
+          - Independently built and deployed a public React/Flask application with interactive Mol* visualization; integrated into EMSuite and used for approximately 10–20 refinement jobs per month.
+          - Migrated a Colab workflow to lab infrastructure and automated SLURM job orchestration to run three refinement strategies per protein chain, select the best results, and assemble the final structure.
+          - Developed reusable input-validation, early error-reporting, and progress-tracking components for integration with other EM-server algorithms.
+          - Diagnosed recurring job failures reported by lab researchers and external users; added optional sequence alignment, specific input-error messages, and input-preparation documentation to help users resolve incompatible inputs.
+
+      - company: MSSN Lab, Purdue University
+        position: Research Assistant
+        location: West Lafayette, IN
+        summary: "Advisor: Prof. Chunyi Peng"
+        highlights:
+          - Independently developed the initial mperf platform using Django and Android for remote experiment control and automated cellular-network measurements; collected 705 hours of data comprising 4.6 million throughput samples across three U.S. carriers, supporting two published studies.
+          - Redesigned MMMap's database and visualization workflows for 32,000+ network cells and 18,700+ handoff events, achieving a 10× speedup in data analysis and display.
+          - Collected and analyzed 45 hours of UAV network measurements over 1,010 km, using radio-access-network traces to compare airborne and ground-level throughput, latency, and mobility failures.
+          - Applied lightweight formal analysis to 3GPP Release 17 IoT protocols, identifying four vulnerabilities and developing 12 proof-of-concept demonstrations.
+
+      - company: Purdue University
+        position: "Teaching Assistant — CS536: Computer Networking"
+        location: West Lafayette, IN
+        start_date: 2020
+        end_date: 2025
+        summary: Selected semesters
+        highlights:
+          - Led office hours and debugging sessions, authored assignments and exam questions, and graded across multiple cohorts — explaining complex networking systems and protocols to students.
 
     Awards:
       - title: National Scholarship
@@ -68,17 +127,20 @@ cv:
         summary: Ranked 4/120
 
     Skills:
-      - name: Programming
+      - name: Programming Languages
         keywords: "Python, C++, Java, SQL, Bash"
 
-      - name: ML/DL
-        keywords: "PyTorch, Transformers, Diffusion Models, Structure Prediction"
-
-      - name: Full-stack
-        keywords: "React, Flask, Django, Mol*"
+      - name: ML / DL
+        keywords: "PyTorch, Transformers, diffusion models, distributed multi-GPU training, GPU inference, training with teacher-generated data, model evaluation, NVIDIA cuEquivariance"
 
       - name: Infrastructure
-        keywords: "Docker, Git, CI/CD, HPC/SLURM"
+        keywords: "Linux, HPC / SLURM, Docker, Git, CI/CD"
+
+      - name: LLM / GenAI
+        keywords: "OpenAI and Anthropic APIs, RAG, FAISS, pgvector, function calling, agents"
+
+      - name: Application Development
+        keywords: "React, Flask, Django, REST APIs, Mol*"
 
     Languages:
       - name: Chinese

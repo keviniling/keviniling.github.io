@@ -1,7 +1,7 @@
 ---
 layout: page
 title: DAQ-Refine
-description: Production web service for cryo-EM protein model refinement
+description: Public web service for cryo-EM protein model refinement
 img: 
 importance: 3
 category: research
@@ -12,19 +12,20 @@ related_publications: false
 
 **Role**: Designer & Sole Developer
 
-A production web service for cryo-EM protein model refinement, deployed as part of the published EMSuite server. Open-access and used by labs worldwide at ~10–20 jobs/month.
+A public web service for cryo-EM protein model refinement, integrated into the EMSuite server and used for approximately 10–20 refinement jobs per month.
 
 ### Key Achievements
 
-- Deployed the lab's cryo-EM refinement method as a production web service (React + Flask, Mol* 3D viewer)
-- Re-architected from a usage-capped Colab notebook to a distributed backend, removing per-user limits and enabling large multimer jobs
-- Runs and compares 3 refinement strategies and auto-selects the best result
+- Independently built and deployed a public React/Flask application with interactive Mol* visualization
+- Migrated a Colab workflow to lab infrastructure and automated SLURM job orchestration to run three refinement strategies per protein chain, select the best results, and assemble the final structure
+- Developed reusable input-validation, early error-reporting, and progress-tracking components for integration with other EM-server algorithms
+- Diagnosed recurring job failures reported by lab researchers and external users; added optional sequence alignment, specific input-error messages, and input-preparation documentation to help users resolve incompatible inputs
 
 ### Technologies
 
 - **Frontend**: React.js, Mol* 3D visualization
-- **Backend**: Python, Flask, RESTful APIs
-- **Infrastructure**: Distributed backend for large multimer jobs
+- **Backend**: Python, Flask, REST APIs
+- **Infrastructure**: SLURM job orchestration on lab infrastructure
 
 ### Live Demo
 
