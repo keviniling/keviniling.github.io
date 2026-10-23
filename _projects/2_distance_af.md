@@ -24,7 +24,7 @@ Constraint-guided protein complex modeling: a per-target, test-time optimization
 ### Publications
 
 - Ling, K. et al. "Peptide–protein docking: from physics-based models to generative intelligence." Chemical Communications, 2026
-- Ling, K. et al. "Distance-AF Multimer: A Multi-Step Approach for Protein Complex Structure Modeling with User-Defined Distance Constraints." (In preparation)
+- Ling, K. et al. "Distance-AF Multimer: A Multi-Step Approach for Protein Complex Structure Modeling with User-Defined Distance Constraints." bioRxiv, 2026. [Preprint](https://www.biorxiv.org/content/10.64898/2026.10.14.759232v1)
 
 ### Technologies
 
